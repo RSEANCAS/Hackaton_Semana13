@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;531;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <section class="cards">
+        <section class="header">
+            <h1>Dog CRUD</h1>
+            <a id="btnAgregarMascota" href="#">Agregar mascota</a>
+        </section>
+        <section id="lstMascota" class="content">
+        </section>
+    </section>
+    <section id="modalRegistro" class="modal">
+        <section class="main">
+            <section class="header">
+                <h2 id="tituloModal">TITULO</h2>
+            </section>
+            <section class="content">
+                <div>
+                    <label>
+                        Nombre: <input type="text" name="txtNombre" id="txtNombre" placeholder="Nombre">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                    Descripción: <input type="text" name="txtDescripcion" id="txtDescripcion" placeholder="Descripción">
+                </label>
+                </div>
+                <div>
+                    <label>
+                    Teléfono: <input type="text" name="txtTelefono" id="txtTelefono" placeholder="Teléfono">
+                </label>
+                </div>
+                <div>
+                    <label>
+                    Correo: <input type="text" name="txtCorreo" id="txtCorreo" placeholder="Correo">
+                </label>
+                </div>
+                <div>
+                    <label>
+                    Pais: <select name="selPais" id="selPais"></select>
+                </label>
+                </div>
+                <div>
+                    <label>
+                    Imagen: <input type="file" name="fileImagen" id="fileImagen" accept="image/*">
+                </label>
+                    <div>
+                        <img id="imgImagen" src="./images/default-image.png" height="100">
+                    </div>
+                </div>
+            </section>
+            <section class="footer">
+                <button id="btnGuardarMascota">Guardar</button>
+                <button id="btnCerrarModalMascota">Cancelar</button>
+            </section>
+        </section>
+    </section>
+
+    <script src="js/main.js "></script>
+</body>
+
+</html>
