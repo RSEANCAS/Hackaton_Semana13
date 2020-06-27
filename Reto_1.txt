@@ -1,0 +1,21 @@
+¿Porqué evitar los callbacks en las llamadas asíncronas?
+	Porque los callbacks hacen que el código se vea desordenado y fácilmente uno se pueda en perder en la lógica del código.
+
+¿Qué es una promesa?
+	Es una técnica para controlar y manejar funciones asíncronas. Maneja 3 estados: pendiente, resuelta y rechazada.
+	Ejemplo:
+	
+	La función fetch es una promesa:
+
+	//estado: pendiente
+	fetch('https://www.google.com.pe')
+	//estado: resuelto
+	.then(resuelto)
+	//estado: rechazado
+	.catch(rechazado);
+	
+	var resuelto = (data) => { console.log('Se resolvío con éxito', data); }
+	var rechazado = (error) => { console.log('Ocurrió un error', error); }
+
+¿Qué es el callback hell?
+	El callback hell es el uso de llamadas anidadas a funciones anónimas en una promesa que hacen que el código se note un poco desordenado.
